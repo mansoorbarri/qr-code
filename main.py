@@ -23,7 +23,7 @@ def generate_qr_code(url, fill_color, output_file):
     qr.add_data(url)
     qr.make(fit=True)
 
-    img = qr.make_image(fill_color=fill_color, back_color=None)
+    img = qr.make_image(fill_color="#9999d2", back_color="transparent")
     img.save(output_file)
 
 def main():
